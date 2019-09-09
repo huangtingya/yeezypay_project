@@ -38,7 +38,7 @@ textarea{ color: #666666;}
 
 /*fs-15px*/
 .lan_nav li a, .global_menu li a, .bank_info, .transaction_info, .amount_info, .payment_time, .supervisor_menu li a, .signout .account_info a{ font-size: 15px; color: #424C50; letter-spacing: .2px;}
-form input.login_submit, .setting_block h6, .added_block > p, .merchant_block p, .detail_list > p, .account_information p{ font-size: 15px; font-family: 'noto serif', Arial; letter-spacing: 1.2px;}
+.login_submit, .setting_block h6, .added_block > p, .merchant_block p, .detail_list > p, .account_information p{ font-size: 15px; font-family: 'noto serif', Arial; letter-spacing: 1.2px;}
 /*fs-14px*/
 .right_area .login_btn, .learn_btn, .scrolldown span:after, .post_more_btn a, .latest_news.tweets_top .post p, a.post_tag, .footer_content ul li a, .copyright, .setting_block button{ font-size: 14px; color: #669966; font-family: 'noto serif', Arial; letter-spacing: 1.2px;}
 .hide_lan_nav li a , .service_list h4, .society h6, .payment_detail_info .confirm_btn > a, .pay_timeout, .added_block button, .merchant_block ul li > .info_style, .info_style, .account_information span, .added_new_content h6, .added_new_setting p, .added_new_textarea p, .added_new_textarea > button, .approve_btn, .reject_btn, .submit_btn{ font-size: 14px;}
@@ -49,13 +49,13 @@ form input.login_submit, .setting_block h6, .added_block > p, .merchant_block p,
 /*hover_style*/
 .search_box a, .lan_nav li a, .right_area .login_btn, .global_menu li a, .learn_btn, 
 .post_more_btn, .post_more_btn a, .service_list ul li a, .society ul li a, .footer_content ul li a,
-form input.login_submit, .payment_detail_info .confirm_btn > a, .supervisor_menu li a,
+.login_submit, .payment_detail_info .confirm_btn > a, .supervisor_menu li a,
 .setting_block button, .added_block a, .added_block .new_btn, .signout .account_info a, 
 .merchant_info_edit > button, .information_edit .setting_form .edit_submit, .added_new_textarea > button,
 .added_block .detail_btn, .added_block .edtails_btn, .approve_btn, .reject_btn, .submit_btn{ transition: .5s; -webkit-transition: .5s; -moz-transition: .5s; -ms-transition: .5s; -o-transition: .5s;}
 
 .search_box a:hover, .lan_nav li a:hover, .global_menu li a:hover, .signout .account_info a:hover{ color: #EA9847;}
-.right_area .login_btn:hover, form input.login_submit:hover, .approve_btn:hover{ background: #669966; color: #fff;}
+.right_area .login_btn:hover, .login_submit:hover, .approve_btn:hover{ background: #669966; color: #fff;}
 .information_edit .setting_form .edit_submit:hover, .added_new_textarea > button:hover, .submit_btn:hover{ color: #fff; background: #5E99B3;}
 .post_more_btn:hover{ background: #424C50;}
 .post_more_btn a:hover, .right_area .login_btn a:hover{ color: #fff;}
@@ -172,7 +172,7 @@ footer{ background: #212324;}
 .replace_code{ display: inline-block;}
 .replace_code > img{ width: 200px; height: auto; float: left;}
 .replace_code input{ width: 80px; height: 40px; display: inline-block; padding-left: 6px; border: 1px solid rgba(217,219,224,.2); box-sizing: border-box; -webkit-box-sizing: border-box; margin-left: 8px;}
-form input.login_submit{ border: none; display: block; width: 288px; height: 40px; margin: 10px auto 20px; border: 1px solid #669966; border-radius: 5px; color: #669966; cursor: pointer;}
+.login_submit{ display: block; width: 288px; padding: 2% 0; margin: 10px auto 20px; border: 1px solid #669966; border-radius: 5px; color: #669966; cursor: pointer; box-sizing: border-box; -webkit-box-sizing: border-box;}
 
 /*payment / sign out*/
 .signout .account_info{  position: relative; white-space: nowrap; margin: 5px 12px; float: left;}
