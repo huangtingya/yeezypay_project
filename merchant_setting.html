@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/common.js"></script>
+	<link href="img/yeezypay.ico" rel="shortcut icon">
+	<title>YEEZYPAY | Enjoy your Yeezypay</title>
+</head>
+<body>
+	<!-- logo & language -->
+	<header>
+		<div class="wrap">
+			<a class="logo" href="login_index.html"><img src="img/yeezypay_logo_final.png"></a>
+			<div class="fl_right right_area">
+				<ul class="lan_nav">
+					<li>
+						<a href="javascript:;">Language<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+						<ul class="hide_lan_nav">
+							<li><a href="javascript:;">CN</a></li>
+							<li><a href="javascript:;">EN</a></li>
+						</ul>	
+					</li>
+				</ul>
+				<div class="fl_left signout">
+					<ul class="account_info">
+						<li>
+							<a href="javascript:;">Hi,
+								<span>Supervisor</span>
+								<i class="fa fa-user" aria-hidden="true"></i>
+								<i class="fa fa-caret-down" aria-hidden="true"></i>
+							</a>
+							<ul class="account_action">
+								<li><a href="login.html">Sign Out</a></li>
+								<li><a href="merchant_information.html">Merchant Setting</a></li>
+								<li><a href="payment.html">Gateway Payment</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- global menu / supervisor -->
+	<div id="menu_fixed" class="global_menu_container">
+		<div class="wrap">
+			<div id="nav_slidetoggle">
+				<ul class="supervisor_menu">
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="merchant_information.html">HOME</a>
+					</li>
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="javascript:;">Merchant<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+						<ul class="hide_merchant_nav">
+							<li><a href="merchant_setting.html">Merchant Setting</a></li>
+							<li><a href="merchant_create_new.html">New Settlement</a></li>
+							<li><a href="merchant_dashboard.html">Merchant Dashboard</a></li>
+							<li><a href="merchant_settlement_batch.html">Merchant Settlement Batch</a></li>
+						</ul>
+					</li>
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="merchant_topup.html">Top Ups<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+					</li>
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="merchant_bank_account.html">Bank Accounts</a>
+					</li>
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="javascript:;">Deposits<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+						<ul class="hide_merchant_nav">
+							<li><a href="merchant_deposit_list.html">Deposits</a></li>
+							<li><a href="merchant_deposit_report.html">Deposit Report</a></li>
+						</ul>
+					</li>
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="javascript:;">Settlements<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+					</li>
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="merchant_report.html">Reports<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+					</li>
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="javascript:;">Notifications</a>
+					</li>
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="javascript:;">Users</a>
+					</li>
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="javascript:;">My Profile<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- supervisor setting -->
+	<div class="supervisor_setting_container">
+		<div class="wrap">
+			<div class="supervisor_setting">
+				<h6>Merchant Setting</h6>
+				<!-- data column 3 class: tabulation_01-->
+				<div class="fl_left tabulation_01">
+					<table class="data_value_info" cellspacing="0">
+						<tr class="info_title">
+							<th colspan="3">Deposlt Limits</th>
+						</tr>
+						<tr class="info_subtitle">
+							<td>Currency</td>
+							<td>Min Amount</td>
+							<td>Max Amount</td>
+						</tr>
+						<tr class="info_value">
+							<td>CNY</td>
+							<td>1.00</td>
+							<td>10,000.00</td>
+						</tr>
+					</table>
+				</div>
+				<!-- data column 2 class: tabulation_01-->
+				<div class="fl_left tabulation_02">
+					<table class="data_value_info" cellspacing="0">
+						<tr class="info_title">
+							<th colspan="2">Deposit Fee Charging</th>
+						</tr>
+						<tr class="info_subtitle">
+							<td>Currency</td>
+							<td>Min Amount</td>
+						</tr>
+						<tr class="info_value">
+							<td>CNY</td>
+							<td>1.00</td>
+						</tr>
+					</table>
+				</div>
+				<!-- data column 3 class: tabulation_01-->
+				<div class="fl_left tabulation_01">
+					<table class="data_value_info" cellspacing="0">
+						<tr class="info_title">
+							<th colspan="3">Payout Limits</th>
+						</tr>
+						<tr class="info_subtitle">
+							<td>Currency</td>
+							<td>Min Amount</td>
+							<td>Max Amount</td>
+						</tr>
+						<tr class="info_value">
+							<td>CNY</td>
+							<td>1.00</td>
+							<td>10,000.00</td>
+						</tr>
+						<tr class="info_value border_top">
+							<td>CNY</td>
+							<td>30,000.00</td>
+							<td>200,000,000.00</td>
+						</tr>
+						<tr class="info_value border_top">
+							<td>CNY</td>
+							<td>50.00</td>
+							<td>50,000.00</td>
+						</tr>
+					</table>
+				</div>
+				<!-- data column 2 class: tabulation_01-->
+				<div class="fl_left tabulation_02">
+					<table class="data_value_info" cellspacing="0">
+						<tr class="info_title">
+							<th colspan="2">Payout Fee Charging</th>
+						</tr>
+						<tr class="info_subtitle">
+							<td>Currency</td>
+							<td>Rate</td>
+						</tr>
+						<tr class="info_value">
+							<td>CNY</td>
+							<td>10%</td>
+						</tr>
+						<tr class="info_value border_top">
+							<td>CNY</td>
+							<td>1.5%</td>
+						</tr>
+						<tr class="info_value border_top">
+							<td>CNY</td>
+							<td>1.5%</td>
+						</tr>
+						<tr class="info_value border_top">
+							<td>CNY</td>
+							<td>1.2%</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- footer -->
+	<footer>
+		<div class="wrap">
+			<div class="footer_content">
+				<span class="copyright">© 2017 YEEZYPAY lnc.</span>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

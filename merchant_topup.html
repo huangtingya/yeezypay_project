@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/common.js"></script>
+	<link href="img/yeezypay.ico" rel="shortcut icon">
+	<title>YEEZYPAY | Enjoy your Yeezypay</title>
+</head>
+<body>
+	<!-- logo & language -->
+	<header>
+		<div class="wrap">
+			<a class="logo" href="login_index.html"><img src="img/yeezypay_logo_final.png"></a>
+			<div class="fl_right right_area">
+				<ul class="lan_nav">
+					<li>
+						<a href="javascript:;">Language<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+						<ul class="hide_lan_nav">
+							<li><a href="javascript:;">CN</a></li>
+							<li><a href="javascript:;">EN</a></li>
+						</ul>	
+					</li>
+				</ul>
+				<div class="fl_left signout">
+					<ul class="account_info">
+						<li>
+							<a href="javascript:;">Hi,
+								<span>Supervisor</span>
+								<i class="fa fa-user" aria-hidden="true"></i>
+								<i class="fa fa-caret-down" aria-hidden="true"></i>
+							</a>
+							<ul class="account_action">
+								<li><a href="login.html">Sign Out</a></li>
+								<li><a href="merchant_information.html">Merchant Setting</a></li>
+								<li><a href="payment.html">Gateway Payment</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- global menu / supervisor -->
+	<div id="menu_fixed" class="global_menu_container">
+		<div class="wrap">
+			<div id="nav_slidetoggle">
+				<ul class="supervisor_menu">
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="merchant_information.html">HOME</a>
+					</li>
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="javascript:;">Merchant<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+						<ul class="hide_merchant_nav">
+							<li><a href="merchant_setting.html">Merchant Setting</a></li>
+							<li><a href="merchant_create_new.html">New Settlement</a></li>
+							<li><a href="merchant_dashboard.html">Merchant Dashboard</a></li>
+							<li><a href="merchant_settlement_batch.html">Merchant Settlement Batch</a></li>
+						</ul>
+					</li>
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="merchant_topup.html">Top Ups<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+					</li>
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="merchant_bank_account.html">Bank Accounts</a>
+					</li>
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="javascript:;">Deposits<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+						<ul class="hide_merchant_nav">
+							<li><a href="merchant_deposit_list.html">Deposits</a></li>
+							<li><a href="merchant_deposit_report.html">Deposit Report</a></li>
+						</ul>
+					</li>
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="javascript:;">Settlements<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+					</li>
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="merchant_report.html">Reports<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+					</li>
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="javascript:;">Notifications</a>
+					</li>
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="javascript:;">Users</a>
+					</li>
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="javascript:;">My Profile<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- supervisor setting -->
+	<div class="supervisor_setting_container">
+		<div class="wrap">
+			<div class="supervisor_setting">
+				<h6>Merchant Top Up List</h6>
+				<div class="form_content">
+					<form class="setting_form">
+						<div class="setting_block">
+							<h6>ID</h6>
+							<input type="text" name="ID">
+						</div>
+						<div class="setting_block">
+							<h6>Top Up Type</h6>
+							<div class="dropdown_btn">
+								<p class="dropdown_title">None selected<i class="fa fa-caret-down" aria-hidden="true"></i></p>
+								<select class="dropdown_select">
+									<option>selected01</option>
+									<option>selected02</option>
+									<option>selected03</option>
+									<option>selected04</option>
+								</select>
+							</div>
+						</div>
+						<div class="setting_block">
+							<h6>Currency</h6>
+							<div class="dropdown_btn">
+								<p class="currency_title">None selected<i class="fa fa-caret-down" aria-hidden="true"></i></p>
+								<select class="currency_select">
+									<option>001</option>
+									<option>002</option>
+									<option>003</option>
+									<option>004</option>
+								</select>
+							</div>
+						</div>
+						<div class="setting_block">
+							<h6>Transaction Date</h6>
+							<div class="date_select_btn">
+								<p class="date_point">From<i class="fa fa-calendar-o" aria-hidden="true"></i></p>
+							</div>
+							<div class="date_select_btn">
+								<p class="date_point">To<i class="fa fa-calendar-o" aria-hidden="true"></i></p>
+							</div>
+						</div>
+					</form>
+					<form class="setting_form">
+						<div class="setting_block">
+							<h6>Remark</h6>
+							<input type="text" name="ID">
+						</div>
+						<div class="setting_block">
+							<h6>Status</h6>
+							<div class="dropdown_btn">
+								<p class="status_title">None selected<i class="fa fa-caret-down" aria-hidden="true"></i></p>
+								<select class="status_select">
+									<option>selected05</option>
+									<option>selected06</option>
+									<option>selected07</option>
+									<option>selected08</option>
+								</select>
+							</div>
+						</div>
+						<div class="setting_block">
+							<button>Search</button>
+						</div>
+					</form>
+				</div>
+				<!-- detail_list -->
+				<div class="detail_list">
+					<div class="added_block">
+						<button class="new_btn"><i class="fa fa-plus" aria-hidden="true"></i>New</button>
+						<button class="detail_btn"></i>Details</button>
+						<a href="javascript:;"><i class="fa fa-search" aria-hidden="true"></i></a>
+						<ul class="pagination">
+							<li><a href="#">&larr;</a></li>
+							<li><a href="#">1</a></li>
+							<li><a href="#">/</a></li>
+							<li><a href="#">20</a></li>
+							<li><a href="#">&rarr;</a></li>
+						</ul>
+					</div>
+					<div class="added_new_container">
+						<div class="added_new_content">
+							<h6>Add New Merchant TopUp</h6>
+							<div class="fl_left added_new_setting">
+								<p class="fl_left">Country:</p>
+								<div class="dropdown_btn">
+									<p class="add_new_title">None selected<i class="fa fa-caret-down" aria-hidden="true"></i></p>
+									<select class="add_new_select">
+										<option>selected</option>
+										<option>selected</option>
+										<option>selected</option>
+										<option>selected</option>
+									</select>
+								</div>
+							</div>
+							<div class="fl_left added_new_setting">
+								<p class="fl_left">Amount:</p>
+								<input type="text" placeholder="">
+								<i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+							</div>
+						</div>
+						<div class="added_new_textarea">
+							<p class="fl_left">Remark:</p>
+							<textarea class="remark_text"></textarea>
+							<button class="fl_right added_new_submit">Submit</button>
+						</div>
+					</div>
+					<table class="data_value_info" cellspacing="0">
+						<tr class="info_title">
+							<th>ID</th>
+							<th>Currency</th>
+							<th>Amount</th>
+							<th>Top Up Type</th>
+							<th>Status</th>
+							<th>Remark</th>
+							<th>Transaction Date</th>
+							<th>Created By</th>
+							<th>Created Date</th>
+							<th>Action</th>
+						</tr>
+						<tr class="info_value">
+							<td>Testing001</td>
+							<td>CNY</td>
+							<td>1.00</td>
+							<td>N/A</td>
+							<td>N/A</td>
+							<td>N/A</td>
+							<td>2017-11-11 16:04</td>
+							<td>N/A</td>
+							<td>N/A</td>
+							<td>N/A</td>
+						</tr>
+						<tr class="info_value">
+							<td>Testing001</td>
+							<td>CNY</td>
+							<td>1.00</td>
+							<td>N/A</td>
+							<td>N/A</td>
+							<td>N/A</td>
+							<td>2017-11-11 16:04</td>
+							<td>N/A</td>
+							<td>N/A</td>
+							<td>N/A</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- footer -->
+	<footer>
+		<div class="wrap">
+			<div class="footer_content">
+				<span class="copyright">© 2017 YEEZYPAY lnc.</span>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

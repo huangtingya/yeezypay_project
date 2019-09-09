@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/common.js"></script>
+	<link href="img/yeezypay.ico" rel="shortcut icon">
+	<title>YEEZYPAY | Enjoy your Yeezypay</title>
+</head>
+<body>
+	<!-- logo & language -->
+	<header>
+		<div class="wrap">
+			<a class="logo" href="index.html"><img src="img/yeezypay_logo_final.png"></a>
+			<div class="fl_right right_area">
+				<ul class="lan_nav">
+					<li>
+						<a href="javascript:;">Language<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+						<ul class="hide_lan_nav">
+							<li><a href="javascript:;">CN</a></li>
+							<li><a href="javascript:;">EN</a></li>
+						</ul>	
+					</li>
+				</ul>
+				<div class="fl_left signout">
+					<ul class="account_info">
+						<li>
+							<a href="javascript:;">Hi,
+								<span>Supervisor</span>
+								<i class="fa fa-user" aria-hidden="true"></i>
+								<i class="fa fa-caret-down" aria-hidden="true"></i>
+							</a>
+							<ul class="account_action">
+								<li><a href="login.html">Sign Out</a></li>
+								<li><a href="merchant_information.html">Merchant Setting</a></li>
+								<li><a href="payment.html">Gateway Payment</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- global menu / supervisor -->
+	<div id="menu_fixed" class="global_menu_container">
+		<div class="wrap">
+			<div id="nav_slidetoggle">
+				<ul class="supervisor_menu">
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="merchant_information.html">HOME</a>
+					</li>
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="javascript:;">Merchant<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+						<ul class="hide_merchant_nav">
+							<li><a href="merchant_setting.html">Merchant Setting</a></li>
+							<li><a href="merchant_create_new.html">New Settlement</a></li>
+							<li><a href="merchant_dashboard.html">Merchant Dashboard</a></li>
+							<li><a href="merchant_settlement_batch.html">Merchant Settlement Batch</a></li>
+						</ul>
+					</li>
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="merchant_topup.html">Top Ups<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+					</li>
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="merchant_bank_account.html">Bank Accounts</a>
+					</li>
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="javascript:;">Deposits<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+						<ul class="hide_merchant_nav">
+							<li><a href="merchant_deposit_list.html">Deposits</a></li>
+							<li><a href="merchant_deposit_report.html">Deposit Report</a></li>
+						</ul>
+					</li>
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="javascript:;">Settlements<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+					</li>
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="merchant_report.html">Reports<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+					</li>
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="javascript:;">Notifications</a>
+					</li>
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="javascript:;">Users</a>
+					</li>
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="javascript:;">My Profile<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- supervisor setting -->
+	<div class="supervisor_setting_container">
+		<div class="wrap">
+			<div class="supervisor_setting">
+				<h6>Deposit List</h6>
+				<div class="form_content">
+					<form class="setting_form">
+						<div class="setting_block">
+							<h6>ID</h6>
+							<input type="text" name="ID">
+						</div>
+						<div class="setting_block">
+							<h6>Customer ID</h6>
+							<input type="text" name="ID">
+						</div>
+						<div class="setting_block">
+							<h6>Bank</h6>
+							<div class="dropdown_btn">
+								<p class="bank_title">None selected<i class="fa fa-caret-down" aria-hidden="true"></i></p>
+								<select class="bank_select">
+									<option>selected</option>
+									<option>selected</option>
+									<option>selected</option>
+									<option>selected</option>
+								</select>
+							</div>
+						</div>
+						<div class="setting_block">
+							<h6>Merchant Date</h6>
+							<div class="date_select_btn">
+								<p class="date_point">From<i class="fa fa-calendar-o" aria-hidden="true"></i></p>
+							</div>
+							<div class="date_select_btn">
+								<p class="date_point">To<i class="fa fa-calendar-o" aria-hidden="true"></i></p>
+							</div>
+						</div>
+					</form>
+					<form class="setting_form">
+						<div class="setting_block">
+							<h6>Ref ID</h6>
+							<input type="text" name="ID">
+						</div>
+						<div class="setting_block">
+							<h6>Currency</h6>
+							<div class="dropdown_btn">
+								<p class="currency_title">None selected<i class="fa fa-caret-down" aria-hidden="true"></i></p>
+								<select class="currency_select">
+									<option>selected</option>
+									<option>selected</option>
+									<option>selected</option>
+									<option>selected</option>
+								</select>
+							</div>
+						</div>
+						<div class="setting_block deposit_btn_margin">
+							<button>Search</button>
+							<button>Export</button>
+						</div>
+					</form>
+				</div>
+				<!-- deposit table -->
+				<div class="fl_left detail_list deposit_th_width">
+					<div class="added_block">
+						<a href="javascript:;"><i class="fa fa-search" aria-hidden="true"></i></a>
+						<ul class="pagination">
+							<li><a href="#">&larr;</a></li>
+							<li><a href="#">1</a></li>
+							<li><a href="#">/</a></li>
+							<li><a href="#">50</a></li>
+							<li><a href="#">&rarr;</a></li>
+						</ul>
+					</div>
+					<table class="data_value_info" cellspacing="0">
+						<tr class="info_title">
+							<th>Status</th>
+							<th>ID</th>
+							<th>Reference</th>
+							<th>Customer ID</th>
+							<th>Merchant Date</th>
+							<th>Bank</th>
+							<th>Currency</th>
+							<th>Amount</th>
+							<th>Charging Fee</th>
+							<th>Updated Date</th>
+						</tr>
+						<tr class="info_value">
+							<td>Pending</td>
+							<td>888</td>
+							<td>2017102608040851</td>
+							<td>Customer888</td>
+							<td>2017-11-11 16:04</td>
+							<td>CMB</td>
+							<td>CNY</td>
+							<td>10,000.00</td>
+							<td>0.00</td>
+							<td>N/A</td>
+						</tr>
+						<tr class="info_value">
+							<td>Pending</td>
+							<td>888</td>
+							<td>2017102608040851</td>
+							<td>Customer888</td>
+							<td>2017-11-11 16:04</td>
+							<td>CMB</td>
+							<td>CNY</td>
+							<td>10,000.00</td>
+							<td>0.00</td>
+							<td>N/A</td>
+						</tr>
+						<tr class="info_value">
+							<td>Pending</td>
+							<td>888</td>
+							<td>2017102608040851</td>
+							<td>Customer888</td>
+							<td>2017-11-11 16:04</td>
+							<td>CMB</td>
+							<td>CNY</td>
+							<td>10,000.00</td>
+							<td>0.00</td>
+							<td>N/A</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- footer -->
+	<footer>
+		<div class="wrap">
+			<div class="footer_content">
+				<span class="copyright">© 2017 YEEZYPAY lnc.</span>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

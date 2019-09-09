@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/common.js"></script>
+	<link href="img/yeezypay.ico" rel="shortcut icon">
+	<title>YEEZYPAY | Enjoy your Yeezypay</title>
+</head>
+<body>
+	<!-- logo & language -->
+	<header>
+		<div class="wrap">
+			<a class="logo" href="login_index.html"><img src="img/yeezypay_logo_final.png"></a>
+			<div class="fl_right right_area">
+				<ul class="lan_nav">
+					<li>
+						<a href="javascript:;">Language<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+						<ul class="hide_lan_nav">
+							<li><a href="javascript:;">CN</a></li>
+							<li><a href="javascript:;">EN</a></li>
+						</ul>	
+					</li>
+				</ul>
+				<div class="fl_left signout">
+					<ul class="account_info">
+						<li>
+							<a href="javascript:;">Hi,
+								<span>Supervisor</span>
+								<i class="fa fa-user" aria-hidden="true"></i>
+								<i class="fa fa-caret-down" aria-hidden="true"></i>
+							</a>
+							<ul class="account_action">
+								<li><a href="login.html">Sign Out</a></li>
+								<li><a href="merchant_information.html">Merchant Setting</a></li>
+								<li><a href="payment.html">Gateway Payment</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- global menu / supervisor -->
+	<div id="menu_fixed" class="global_menu_container">
+		<div class="wrap">
+			<div id="nav_slidetoggle">
+				<ul class="supervisor_menu">
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="merchant_information.html">HOME</a>
+					</li>
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="javascript:;">Merchant<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+						<ul class="hide_merchant_nav">
+							<li><a href="merchant_setting.html">Merchant Setting</a></li>
+							<li><a href="merchant_create_new.html">New Settlement</a></li>
+							<li><a href="merchant_dashboard.html">Merchant Dashboard</a></li>
+							<li><a href="merchant_settlement_batch.html">Merchant Settlement Batch</a></li>
+						</ul>
+					</li>
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="merchant_topup.html">Top Ups<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+					</li>
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="merchant_bank_account.html">Bank Accounts</a>
+					</li>
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="javascript:;">Deposits<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+						<ul class="hide_merchant_nav">
+							<li><a href="merchant_deposit_list.html">Deposits</a></li>
+							<li><a href="merchant_deposit_report.html">Deposit Report</a></li>
+						</ul>
+					</li>
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="javascript:;">Settlements<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+					</li>
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="merchant_report.html">Reports<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+					</li>
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="javascript:;">Notifications</a>
+					</li>
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="javascript:;">Users</a>
+					</li>
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="javascript:;">My Profile<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- supervisor setting -->
+	<div class="supervisor_setting_container">
+		<div class="wrap">
+			<div class="supervisor_setting">
+				<h6>Merchant Dashboard</h6>
+				<div class="detail_list dashboard_width">
+					<div class="added_block">
+						<p>Overall Balance Summary</p>
+					</div>
+					<table class="data_value_info" cellspacing="0">
+						<tr class="info_title">
+							<th>Currency</th>
+							<th>Current Balance</th>
+							<th>Pending Settlement</th>
+							<th>Pending Payout</th>
+						</tr>
+						<tr class="info_value">
+							<td>CNY</td>
+							<td>17,220.40</td>
+							<td>30,000.00</td>
+							<td>0.00</td>
+						</tr>
+					</table>
+				</div>
+				<div class="prompt_content">
+					<div class="prompt_info_settlement"></div>
+					<p>Pending settlement</p>
+				</div>
+				<div class="prompt_content">
+					<div class="prompt_info_payout"></div>
+					<p>Pending Payout</p>
+				</div>
+				<div class="prompt_content">
+					<div class="prompt_info_topup"></div>
+					<p>Pending Topup</p>
+				</div>
+				<div class="detail_list daily_width">
+					<div class="added_block">
+						<p>Total of deposit by currency</p>
+						<a href="javascript:;"><i class="fa fa-search" aria-hidden="true"></i></a>
+						<ul class="pagination">
+							<li><a href="#">&larr;</a></li>
+							<li><a href="#">1</a></li>
+							<li><a href="#">/</a></li>
+							<li><a href="#">11</a></li>
+							<li><a href="#">&rarr;</a></li>
+						</ul>
+					</div>
+					<table class="data_value_info" cellspacing="0">
+						<tr class="info_title">
+							<th>Month</th>
+							<th>Currency</th>
+							<th>Total Amount</th>
+						</tr>
+						<tr class="info_value">
+							<td>2017-10-31</td>
+							<td>CNY</td>
+							<td>10,000.00</td>
+						</tr>
+						<tr class="info_value">
+							<td>2017-10-30</td>
+							<td>CNY</td>
+							<td>10,000.00</td>
+						</tr>
+						<tr class="info_value">
+							<td>2017-10-29</td>
+							<td>CNY</td>
+							<td>10,000.00</td>
+						</tr>
+					</table>
+				</div>
+				<div class="fl_left detail_list daily_width">
+					<div class="added_block">
+						<p>Total of payout by currency</p>
+						<a href="javascript:;"><i class="fa fa-search" aria-hidden="true"></i></a>
+						<ul class="pagination">
+							<li><a href="#">&larr;</a></li>
+							<li><a href="#">1</a></li>
+							<li><a href="#">/</a></li>
+							<li><a href="#">11</a></li>
+							<li><a href="#">&rarr;</a></li>
+						</ul>
+					</div>
+					<table class="data_value_info" cellspacing="0">
+						<tr class="info_title">
+							<th>Month</th>
+							<th>Currency</th>
+							<th>Total Amount</th>
+						</tr>
+						<tr class="info_value">
+							<td>2017-10-31</td>
+							<td>CNY</td>
+							<td>10,000.00</td>
+						</tr>
+						<tr class="info_value">
+							<td>2017-10-30</td>
+							<td>CNY</td>
+							<td>10,000.00</td>
+						</tr>
+						<tr class="info_value">
+							<td>2017-10-29</td>
+							<td>CNY</td>
+							<td>10,000.00</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- footer -->
+	<footer>
+		<div class="wrap">
+			<div class="footer_content">
+				<span class="copyright">© 2017 YEEZYPAY lnc.</span>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

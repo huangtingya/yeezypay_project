@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/common.js"></script>
+	<link href="img/yeezypay.ico" rel="shortcut icon">
+	<title>YEEZYPAY | Enjoy your Yeezypay</title>
+</head>
+<body>
+	<!-- logo & language -->
+	<header>
+		<div class="wrap">
+			<a class="logo" href="login_index.html"><img src="img/yeezypay_logo_final.png"></a>
+			<div class="fl_right right_area">
+				<ul class="lan_nav">
+					<li>
+						<a href="javascript:;">Language<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+						<ul class="hide_lan_nav">
+							<li><a href="javascript:;">CN</a></li>
+							<li><a href="javascript:;">EN</a></li>
+						</ul>	
+					</li>
+				</ul>
+				<div class="fl_left signout">
+					<ul class="account_info">
+						<li>
+							<a href="javascript:;">Hi,
+								<span>Supervisor</span>
+								<i class="fa fa-user" aria-hidden="true"></i>
+								<i class="fa fa-caret-down" aria-hidden="true"></i>
+							</a>
+							<ul class="account_action">
+								<li><a href="login.html">Sign Out</a></li>
+								<li><a href="merchant_information.html">Merchant Setting</a></li>
+								<li><a href="payment.html">Gateway Payment</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- global menu / supervisor -->
+	<div id="menu_fixed" class="global_menu_container">
+		<div class="wrap">
+			<div id="nav_slidetoggle">
+				<ul class="supervisor_menu">
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="merchant_information.html">HOME</a>
+					</li>
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="javascript:;">Merchant<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+						<ul class="hide_merchant_nav">
+							<li><a href="merchant_setting.html">Merchant Setting</a></li>
+							<li><a href="merchant_create_new.html">New Settlement</a></li>
+							<li><a href="merchant_dashboard.html">Merchant Dashboard</a></li>
+							<li><a href="merchant_settlement_batch.html">Merchant Settlement Batch</a></li>
+						</ul>
+					</li>
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="merchant_topup.html">Top Ups<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+					</li>
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="merchant_bank_account.html">Bank Accounts</a>
+					</li>
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="javascript:;">Deposits<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+						<ul class="hide_merchant_nav">
+							<li><a href="merchant_deposit_list.html">Deposits</a></li>
+							<li><a href="merchant_deposit_report.html">Deposit Report</a></li>
+						</ul>
+					</li>
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="javascript:;">Settlements<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+					</li>
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="merchant_report.html">Reports<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+					</li>
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="javascript:;">Notifications</a>
+					</li>
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="javascript:;">Users</a>
+					</li>
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="javascript:;">My Profile<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- supervisor setting -->
+	<div class="supervisor_setting_container">
+		<div class="wrap">
+			<div class="supervisor_setting">
+				<h6>Merchant Information</h6>
+				<div class="merchant_information_content">
+					<div class="merchant_block">
+						<ul>
+							<li>Code:<span class="info_style">T0001</span></li>
+							<li>Name:<span class="info_style">T0001</span></li>
+							<li>Email:<span class="info_style">T0001@email.com</span></li>
+							<li>Contact Number:<span class="info_style">86 13125837576</span></li>
+							<li>Fax Number:<span class="info_style">86 13125837576</span></li>
+							<li>Address:<span class="info_style">5F Century Avenue</span></li>
+						</ul>
+					</div>
+					<div class="merchant_block">
+						<ul>
+							<li>City:<span class="info_style">Pudong New Area</span></li>
+							<li>Province:<span class="info_style">Shanghai</span></li>
+							<li>Country:<span class="info_style">China</span></li>
+							<li>Zip Code:<span class="info_style">86 13125837576</span></li>
+							<li>Remarks:<span class="info_style">59824</span></li>
+							<li>Time Zone Offset:<span class="info_style">(GMT+08:00) Beijing,Perth,Singapore,Hong Kong</span></li>
+						</ul>
+					</div>
+					<div class="merchant_info_edit">
+						<button>Edit</button>
+					</div>
+					<div class="information_edit">
+						<div class="accordion_content">
+							<form class="setting_form">
+								<div class="account_information">
+									<div class="account_info_fix">
+										<p>Code:</p>
+										<span>TEST001</span>
+										<p>Name:</p>
+										<span>TEST001</span>
+										<p>Email:</p>
+										<span>test888@test.com</span>
+									</div>
+								</div>
+								<div class="account_information">
+									<div class="fl_left account_info_modify">
+										<p>Contact Number:</p>
+										<input type="text" placeholder="123567890">
+										<p>Fax Number:</p>
+										<input type="text" placeholder="111111111">
+										<p>Address:</p>
+										<textarea class="remark_text"></textarea>
+									</div>
+									<div class="fl_left account_info_modify">
+										<p>City:</p>
+										<input type="text" placeholder="123567890">
+										<p>Province:</p>
+										<input type="text" placeholder="111111111">
+										<p>Country:</p>
+										<div class="dropdown_btn">
+											<p class="country_title">None selected<i class="fa fa-caret-down" aria-hidden="true"></i></p>
+											<select class="bank_select">
+												<option>selected</option>
+												<option>selected</option>
+												<option>selected</option>
+												<option>selected</option>
+											</select>
+										</div>
+										<p>Remarks:</p>
+										<input type="text" placeholder="">
+										<p>Time Zone Offset:</p>
+										<div class="dropdown_btn">
+											<p class="timezone_title">None selected<i class="fa fa-caret-down" aria-hidden="true"></i></p>
+											<select class="bank_select">
+												<option>selected</option>
+												<option>selected</option>
+												<option>selected</option>
+												<option>selected</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<input class="edit_submit" type="submit" value="Submit">
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="detail_list overall_width">
+					<div class="added_block">
+						<p>Overall Balance Summary</p>
+					</div>
+					<table class="data_value_info" cellspacing="0">
+						<tr class="info_title">
+							<th>Currency</th>
+							<th>Current Balance</th>
+							<th>Pending Settlement</th>
+							<th>Today Banance</th>
+							<th>Last Day Balance</th>
+							<th>Last Second Day Balance</th>
+						</tr>
+						<tr class="info_value">
+							<td>CNY</td>
+							<td>17,220.40</td>
+							<td>30,000.00</td>
+							<td>0.00</td>
+							<td>0.00</td>
+							<td>0.00</td>
+						</tr>
+						<tr class="info_value">
+						<td>CNY</td>
+							<td>17,220.40</td>
+							<td>30,000.00</td>
+							<td>0.00</td>
+							<td>0.00</td>
+							<td>0.00</td>
+						</tr>
+						<tr class="info_value">
+							<td>CNY</td>
+							<td>17,220.40</td>
+							<td>30,000.00</td>
+							<td>0.00</td>
+							<td>0.00</td>
+							<td>0.00</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- footer -->
+	<footer>
+		<div class="wrap">
+			<div class="footer_content">
+				<span class="copyright">© 2017 YEEZYPAY lnc.</span>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

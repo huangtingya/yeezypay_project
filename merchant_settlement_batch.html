@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/common.js"></script>
+	<link href="img/yeezypay.ico" rel="shortcut icon">
+	<title>YEEZYPAY | Enjoy your Yeezypay</title>
+</head>
+<body>
+	<!-- logo & language -->
+	<header>
+		<div class="wrap">
+			<a class="logo" href="login_index.html"><img src="img/yeezypay_logo_final.png"></a>
+			<div class="fl_right right_area">
+				<ul class="lan_nav">
+					<li>
+						<a href="javascript:;">Language<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+						<ul class="hide_lan_nav">
+							<li><a href="javascript:;">CN</a></li>
+							<li><a href="javascript:;">EN</a></li>
+						</ul>	
+					</li>
+				</ul>
+				<div class="fl_left signout">
+					<ul class="account_info">
+						<li>
+							<a href="javascript:;">Hi,
+								<span>Supervisor</span>
+								<i class="fa fa-user" aria-hidden="true"></i>
+								<i class="fa fa-caret-down" aria-hidden="true"></i>
+							</a>
+							<ul class="account_action">
+								<li><a href="login.html">Sign Out</a></li>
+								<li><a href="merchant_information.html">Merchant Setting</a></li>
+								<li><a href="payment.html">Gateway Payment</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- global menu / supervisor -->
+	<div id="menu_fixed" class="global_menu_container">
+		<div class="wrap">
+			<div id="nav_slidetoggle">
+				<ul class="supervisor_menu">
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="merchant_information.html">HOME</a>
+					</li>
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="javascript:;">Merchant<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+						<ul class="hide_merchant_nav">
+							<li><a href="merchant_setting.html">Merchant Setting</a></li>
+							<li><a href="merchant_create_new.html">New Settlement</a></li>
+							<li><a href="merchant_dashboard.html">Merchant Dashboard</a></li>
+							<li><a href="merchant_settlement_batch.html">Merchant Settlement Batch</a></li>
+						</ul>
+					</li>
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="merchant_topup.html">Top Ups<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+					</li>
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="merchant_bank_account.html">Bank Accounts</a>
+					</li>
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="javascript:;">Deposits<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+						<ul class="hide_merchant_nav">
+							<li><a href="merchant_deposit_list.html">Deposits</a></li>
+							<li><a href="merchant_deposit_report.html">Deposit Report</a></li>
+						</ul>
+					</li>
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="javascript:;">Settlements<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+					</li>
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="merchant_report.html">Reports<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+					</li>
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="javascript:;">Notifications</a>
+					</li>
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="javascript:;">Users</a>
+					</li>
+					<li>
+						<span class="supervisor_icon"></span>
+						<a href="javascript:;">My Profile<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- supervisor setting -->
+	<div class="supervisor_setting_container">
+		<div class="wrap">
+			<div class="supervisor_setting">
+				<h6>Merchant Settlement Batch</h6>
+				<div class="form_content">
+					<form class="setting_form">
+						<div class="setting_block">
+							<h6>ID</h6>
+							<input type="text" name="ID">
+						</div>
+						<div class="setting_block">
+							<h6>Transaction Date</h6>
+							<div class="date_select_btn">
+								<p class="date_point">From<i class="fa fa-calendar-o" aria-hidden="true"></i></p>
+							</div>
+							<div class="date_select_btn">
+								<p class="date_point">To<i class="fa fa-calendar-o" aria-hidden="true"></i></p>
+							</div>
+						</div>
+					</form>
+					<form class="setting_form">
+						<div class="setting_block">
+							<h6>Status</h6>
+							<div class="dropdown_btn">
+								<p class="status_title">None selected<i class="fa fa-caret-down" aria-hidden="true"></i></p>
+								<select class="status_select">
+									<option>selected05</option>
+									<option>selected06</option>
+									<option>selected07</option>
+									<option>selected08</option>
+								</select>
+							</div>
+						</div>
+						<div class="setting_block">
+							<button>Search</button>
+						</div>
+					</form>
+				</div>
+				<!-- detail_list -->
+				<div class="detail_list">
+					<div class="added_block">
+						<button class="new_btn"><i class="fa fa-plus" aria-hidden="true"></i>New</button>
+						<button class="detail_btn"></i>Details</button>
+						<a href="javascript:;"><i class="fa fa-search" aria-hidden="true"></i></a>
+						<ul class="pagination">
+							<li><a href="#">&larr;</a></li>
+							<li><a href="#">1</a></li>
+							<li><a href="#">/</a></li>
+							<li><a href="#">20</a></li>
+							<li><a href="#">&rarr;</a></li>
+						</ul>
+					</div>
+					<div class="added_new_container">
+						<div class="added_new_content">
+							<h6>New Settlement</h6>
+						</div>
+						<div class="added_new_textarea batch_textarea">
+							<p class="fl_left setting_width">Remark:</p>
+							<textarea class="remark_text textarea_width"></textarea>
+						</div>
+						<button class="approve_btn">Add Row</button>
+						<button class="reject_btn">Remove Row</button>
+						<table class="data_value_info batch_setting_width" cellspacing="0">
+							<tr class="info_title">
+								<th>Active</th>
+								<th>From Currency Code</th>
+								<th>Amount</th>
+								<th>To Merchant Bank Account</th>
+							</tr>
+							<tr class="info_value">
+								<td><input type="checkbox" name=""></td>
+								<td>
+									<div class="dropdown_btn batch_add_btn">
+										<p class="status_title">None selected<i class="fa fa-caret-down" aria-hidden="true"></i></p>
+										<select class="status_select">
+											<option>selected05</option>
+											<option>selected06</option>
+											<option>selected07</option>
+											<option>selected08</option>
+										</select>
+									</div>
+								</td>
+								<td></td>
+								<td>
+									<div class="dropdown_btn batch_add_btn">
+										<p class="status_title">None selected<i class="fa fa-caret-down" aria-hidden="true"></i></p>
+										<select class="status_select">
+											<option>selected05</option>
+											<option>selected06</option>
+											<option>selected07</option>
+											<option>selected08</option>
+										</select>
+									</div>
+								</td>
+							</tr>
+						</table>
+						<button class="submit_btn">Submit</button>
+						<table class="data_value_info batch_setting_width" cellspacing="0">
+							<tr class="info_title">
+								<th>Currency</th>
+								<th>Current Balance</th>
+								<th>Pending Settlement</th>
+								<th>Pending Payout</th>
+							</tr>
+							<tr class="info_value">
+								<td>CNY</td>
+								<td>11,830.00</td>
+								<td>6.00</td>
+								<td>154.59</td>
+							</tr>
+							<tr class="info_value">
+								<td>CNY</td>
+								<td>11,830.00</td>
+								<td>6.00</td>
+								<td>154.59</td>
+							</tr>
+						</table>
+					</div>
+					<div class="added_new_container">
+						<div class="added_new_content">
+							<h6>Settlement Batch Details</h6>
+							<div class="account_information">
+								<div class="account_info_fix">
+									<p>Filename:</p>
+									<span></span>
+									<p>Status:</p>
+									<span>Pending</span>
+									<p>Total Records:</p>
+									<span>1</span>
+									<p>Created By</p>	
+									<span>TEST0001</span>
+									<p>Created Date</p>	
+									<span>2017-07-21</span>
+									<p>Updated By</p>	
+									<span>TEST0001</span>
+									<p>Updated Date</p>	
+									<span>2017-07-21</span>
+									<p>Remark</p>	
+									<span>none, none</span>
+									<p>Updated Remark</p>	
+									<span>none</span>
+								</div>
+								<button class="approve_btn">Approve</button>
+								<button class="reject_btn">Reject</button>
+							</div>
+						</div>
+						<table class="data_value_info batch_setting_width" cellspacing="0">
+							<tr class="info_title">
+								<th>ID</th>
+								<th>Bank</th>
+								<th>Account Holder Name</th>
+								<th>Account Number</th>
+								<th>From Currency</th>
+								<th>To Currency</th>
+								<th>Amount</th>
+								<th>Remark</th>
+							</tr>
+							<tr class="info_value">
+								<td>27</td>
+								<td>Asia Commercial Bank</td>
+								<td>VNDww</td>
+								<td>93024324</td>
+								<td>IDR</td>
+								<td>VND</td>
+								<td>100.00</td>
+								<td>Pending</td>
+							</tr>
+						</table>
+					</div>
+					<table class="data_value_info batch_fix_info" cellspacing="0">
+						<tr class="info_title">
+							<th>ID</th>
+							<th>Status</th>
+							<th>Total Records</th>
+							<th>Created By</th>
+							<th>Created Date</th>
+							<th>Updated By</th>
+							<th>Updated Remark</th>
+						</tr>
+						<tr class="info_value">
+							<td>22</td>
+							<td class="ok">Done</td>
+							<td>1</td>
+							<td>TEST0001</td>
+							<td>2017-08-14</td>
+							<td>TEST0001</td>
+							<td>1 of 1 submitted.</td>
+						</tr>
+						<tr class="info_value">
+							<td>22</td>
+							<td class="rejected">Rejected</td>
+							<td>1</td>
+							<td>TEST0001</td>
+							<td>2017-08-14</td>
+							<td>TEST0001</td>
+							<td>1 of 1 submitted.</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- footer -->
+	<footer>
+		<div class="wrap">
+			<div class="footer_content">
+				<span class="copyright">© 2017 YEEZYPAY lnc.</span>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
