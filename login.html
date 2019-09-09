@@ -109,13 +109,19 @@
 			</div>
 		</div>
 	</div>
+	<script>
+		function formSubmit()
+  			{
+  				document.getElementById("LoginIndex").submit()
+  			};
+	</script>
 	<!-- Login service -->
 	<div class="login_container">
 		<div class="wrap">
 			<div class="system_login_content">
 				<div class="login_block">
 					<h6>System Administrator Login</h6>
-					<form name="loginput" method="post" action="login_index.html">
+					<form id="LoginIndex" name="loginput" method="post" action="login_index.html">
 						<div class="login_name">
 							<span><i class="fa fa-user" aria-hidden="true"></i></span>
 							<input type="text" placeholder="Login ID" maxlength="10">
